@@ -6,6 +6,8 @@ LOG_FILE=${HOME_DIR}/${NAME}.log
 
 show-log:
 	tail -n 50 ${LOG_FILE}
+follow-log:
+	tail -f -n 50 ${LOG_FILE}
 
 show-stats:
 	cat ${LOG_FILE} |\
